@@ -6,4 +6,8 @@
     @foreach($tasks as $task)
         <li>{{ $task }}</li>
     @endforeach
+    <ul>
+        <li>first</li>
+        <li>second</li>
+    </ul>
 @endsection
