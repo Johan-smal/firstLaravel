@@ -15,4 +15,22 @@ Route::get('/', 'PagesController@home');
 Route::get('/about', 'PagesController@about');
 Route::get('/contact', 'PagesController@contact');
 
-Route::get('/projects', 'ProjectsController@index');
+/*
+ * GET /projects {index}
+ * GET /projects/create {create}
+ * POST /projects {store}
+ * GET /projects/1/edit {edit}
+ * PATCH /projects/1 {update}
+ * DELETE /projects/1 {destroy}
+ */
+Route::resource('projects', 'ProjectsController');
+
+
+//Route::get('/projects', 'ProjectsController@index');
+//Route::get('/projects/create', 'ProjectsController@create');
+//Route::get('/projects/{project}', 'ProjectsController@show');
+//Route::post('/projects', 'ProjectsController@store');
+//Route::get('/projects/{project}/edit', 'ProjectsController@edit');
+//Route::patch('/projects/{project}/update', 'ProjectsController@update');
+//Route::delete('/projects/{project}', 'ProjectsController@destroy');
+
