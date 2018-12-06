@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>@yield('title', 'Johan se website')</title>
+    <style>
+        .is-complete {
+            text-decoration: line-through;
+        }
+    </style>
 </head>
 <body>
 <ul>
